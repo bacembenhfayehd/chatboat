@@ -1,0 +1,13 @@
+.x {
+    background: #fff;
+    height: 25px;
+    width: 25px;
+    padding: 6px;
+    color: green; /* Utiliser color au lieu de fill */
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex; /* Pour centrer l'icône */
+    align-items: center;
+    justify-content: center;
+  }
+  
