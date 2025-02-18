@@ -80,11 +80,13 @@ body{
 .chatbot-body{
   display: flex;
   flex-direction: column;
-  /*margin-bottom: 82px;*/
+  margin-bottom: 82px;
   gap: 10px;
   height: 460px;
   overflow-y: auto;
   padding: 25px 22px;
+  scrollbar-width: thin;
+  scrollbar-color: #cef5d7 transparent;
 }
 
 .chatbot-body .message{
