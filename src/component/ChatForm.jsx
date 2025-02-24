@@ -16,7 +16,7 @@ function ChatForm({setChatHistory,generateBotResponse,chatHistory}) {
         // add thinking for bot response
 
         setTimeout(() => { setChatHistory((history) => [...history , {role:'model', text:'Thinking...'}])
-        generateBotResponse([...chatHistory ,{role:'user', text:clientMessage} ]);
+        generateBotResponse([...chatHistory ,{role:'user', text:clientMessage} ],setChatHistory);
     },600) 
 
         

@@ -26,7 +26,8 @@ body{
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  background: rgb(34, 158, 34);
+  background:  #0d775e;
+
 }
 
 #chatbot-toggle span {
@@ -41,6 +42,7 @@ body{
   pointer-events: none;
   transform: scale(0.2);
   transform-origin: bottom right;
+  max-height: 80vh;
   bottom: 90px;
   right: 35px;
   width: 450px;
@@ -59,8 +61,8 @@ body{
 
 .chatbot-popup .chatbot-header{
   display: flex;
-  padding: 15px 22px;
-  background: rgb(64, 167, 64);
+  padding: 10px 15px;
+  background: #204c41;
   justify-content: space-between;
   align-items: center;
 }
@@ -79,6 +81,7 @@ body{
 }
 
 .chatbot-header .header-info{
+  flex-shrink: 0;
   display: flex;
   gap: 10px ;
   align-items: center;
@@ -95,7 +98,7 @@ body{
     height: 35px;
     width: 35px;
     padding: 6px;
-    fill: green; /* Utiliser color au lieu de fill */
+    fill: #0d775e; /* Utiliser color au lieu de fill */
     flex-shrink: 0;
     border-radius: 50%;
     display: flex; /* Pour centrer l'icône */
@@ -119,15 +122,16 @@ body{
 }
 
 .chatbot-header button:hover{
-  background: green;
+  background: #0d775e;
 }
 
 .chatbot-body{
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  margin-bottom: 82px;
+  margin-bottom: 70px;
   gap: 10px;
-  height: 460px;
+  max-height: 60vh;
   overflow-y: auto;
   padding: 25px 22px;
   scrollbar-width: thin;
@@ -141,7 +145,7 @@ body{
 }
 
 .chatbot-body .bot-message svg{
-  background:green;
+  background:#0d775e;
   height: 35px;
   width: 35px;
   padding: 6px;
@@ -169,19 +173,21 @@ body{
 }
 
 .chatbot-body .bot-message .message-text {
-  background: rgb(182, 223, 182);
+  background:#61b47d;
+  
   border-radius: 13px 13px 13px 3px;
 }
 
 .chatbot-body .user-message .message-text {
   color: white;
-  background: rgb(64, 167, 64);
+  background: #0d775e;
   border-radius: 13px 13px 3px 13px;
 }
   
 
 .chat-footer{
   position: absolute;
+  flex-shrink: 0;
   bottom: 0;
   padding: 15px 22px 20px;
   width: 100%;
@@ -199,7 +205,7 @@ body{
 }
 
 .chat-footer .chat-form:focus-within{
-  outline: 2px solid green;
+  outline: 2px solid  #204c41;
 }
 
 .chat-form .message-input{
@@ -224,13 +230,13 @@ body{
   flex-shrink: 0;
   margin-right: 6px;
   border-radius: 50%;
-  background:rgb(64, 167, 64);
+  background: #204c41;
   transition: 0.2s ease;
 
 }
 
 .chat-form button:hover{
-  background: green;
+  background:  #204c41;
 }
 
 
